@@ -40,8 +40,8 @@ class IndexController extends Controller {
 
   public function renderMainContent(): :xhp {
     $custom_org = \HH\Asio\join(Configuration::gen('custom_org'));
-    if ($custom_org->getValue() === 'Facebook') {
-      $welcome_msg = tr('Welcome to the Facebook Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.');
+    if ($custom_org->getValue() === 'Center for Cyber Security') {
+      $welcome_msg = tr('Welcome to the CCM Cyber Security Club Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.');
     } else {
       $welcome_msg = 'Welcome to the ' . $custom_org->getValue() . ' Capture the Flag Competition. By clicking "Play," you will be entered into the official CTF challenge. Good luck in your conquest.';
     }
@@ -230,7 +230,7 @@ class IndexController extends Controller {
               <div class="rule-main">
                 <p>
                   {tr(
-                    'No brute forcing of challenge flag/ keys against the scoring site.',
+                    'No brute forcing of challenge flag/keys against the scoring site.',
                   )}
                 </p>
                 <p></p>
@@ -244,7 +244,7 @@ class IndexController extends Controller {
               <div class="rule-main">
                 <p>
                   {tr(
-                    'DoSing the CTF platform or any of the challenges is forbidden.',
+                    'DDoSing the CTF platform or any of the challenges is not only forbidden but it is extremely illegal too.',
                   )}
                 </p>
                 <p></p>
@@ -258,7 +258,7 @@ class IndexController extends Controller {
               <div class="rule-main">
                 <p>
                   {tr(
-                    'By participating in the contest, you agree to release Facebook and its employees, and the hosting organization from any and all liability, claims or actions of any kind whatsoever for injuries, damages or losses to persons and property which may be sustained in connection with the contest. You acknowledge and agree that Facebook et al is not responsible for technical, hardware or software failures, or other errors or problems which may occur in connection with the contest.',
+                    'By participating in the contest, you agree to release Facebook and its employees, and CCM Center for Cyber Security from any and all liability, claims or actions of any kind whatsoever for injuries, damages or losses to persons and property which may be sustained in connection with the contest. You acknowledge and agree that Facebook et al is not responsible for technical, hardware or software failures, or other errors or problems which may occur in connection with the contest.',
                   )}
                 </p>
               </div>
@@ -750,7 +750,7 @@ class IndexController extends Controller {
             </h1>
             <p>
               {tr(
-                'For the best CTF experience, please make window size bigger.',
+                'For the best CTF experience, please make window size bigger (Press F11).',
               )}
             </p>
             <p>{tr('Thank you.')}</p>
